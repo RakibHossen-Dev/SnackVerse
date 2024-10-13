@@ -16,7 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
       rel="stylesheet"
@@ -623,7 +626,176 @@
         </ul>
       </div>
     </section>
+    <!-- Review-->
 
+    <!-- <section>
+      <h3 class="text-center text-Yellow text-2xl lg:text-4xl font-lobster">
+        Review
+      </h3>
+      <div class="border-2 w-36 border-Yellow mx-auto my-2"></div>
+    </section> -->
+    <section id="Testimonial" class="w-11/12 mx-auto my-10">
+      <div class="text-center lg:w-9/12 mx-auto w-11/12">
+        <h3 class="text-center text-Yellow text-2xl lg:text-4xl font-lobster">
+          Review
+        </h3>
+        <div class="border-2 w-36 border-Yellow mx-auto my-2"></div>
+      </div>
+
+      <div class="swiper p-4 rounded-md">
+        <ul class="swiper-wrapper mb-5">
+          <li class="swiper-slide bg-Yellow p-4 rounded-md">
+            <div class="h-44">
+              <p class="paragraph mb-3 text-Black">
+                "The burgers here are amazing! Perfectly cooked and super
+                flavorful. My go-to spot for a quick, tasty meal!"
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/hero-person.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-gray-50 font-bold">Jhone Dev</p>
+                  <p class="text-gray-50">Designer</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide bg-Yellow rounded-md p-3">
+            <div class="h-44">
+              <p class="paragraph text-Black mb-2">
+                "I love the variety of snacks they offer. The fries and
+                mozzarella sticks are always fresh and crispy. Great service
+                too!"
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/review-2.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="font-bold text-gray-50">Abdul Ahad</p>
+                  <p class="text-gray-50">Student</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide bg-Yellow rounded-md p-3">
+            <div class="h-44">
+              <p class="paragraph text-Black mb-2">
+                "The BBQ Chicken Pizza was delicious! The sauce was smoky and
+                sweet, and the crust was perfect. Highly recommend!"
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/review-9.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="font-bold text-gray-50">Abdul Kader</p>
+                  <p class="text-gray-50">Professor</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide bg-Yellow rounded-md p-3">
+            <div class="h-44">
+              <p class="paragraph text-Black mb-2">
+                "SnackVerse has the best milkshakes! I can’t get enough of their
+                strawberry shake – so creamy and refreshing!"
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/member-2.png"
+                  alt=""
+                />
+                <div>
+                  <p class="font-bold text-gray-50">Mark Del</p>
+                  <p class="text-gray-50">Developer</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide bg-Yellow rounded-md p-3">
+            <div class="h-44">
+              <p class="paragraph text-Black mb-2">
+                "The happy hour deals are fantastic! Great place to grab a drink
+                and snack with friends after work."
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/member-4.png"
+                  alt=""
+                />
+                <div>
+                  <p class="font-bold text-gray-50">Mohammad</p>
+                  <p class="text-gray-50">Lawyer</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide bg-Yellow rounded-md p-3">
+            <div class="h-44">
+              <p class="paragraph text-Black mb-2">
+                "The veggie burger was out of this world! It’s hard to find a
+                good veggie option, but SnackVerse nailed it. I’ll definitely be
+                back!"
+              </p>
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="img/review-4.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-gray-50 font-bold">Shawon Islam</p>
+                  <p class="text-gray-50">Student</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteration: false,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+        breakpoints: {
+          // when window width is >= 320px
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          760: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
