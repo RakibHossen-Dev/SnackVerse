@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackVerse</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- fontFamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              green: "#4CAF50",
+              Beige: "#F5F5Dc",
+              Black: "#212121",
+              Yellow: "#FFC107",
+            },
+            fontFamily: {
+              lobster: ["Lobster", "cursive"],
+              pacifico: ["Pacifico", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-Beige">
+    <header class="bg-Black py-8">
+      <nav class="flex justify-between items-center w-11/12 mx-auto relative">
+        <a
+          class="lg:text-4xl text-3xl text-green font-extrabold font-lobster"
+          href=""
+          >Snack<span class="text-Yellow">Verse</span></a
+        >
+        <div class="flex justify-center items-center gap-6">
+          <ul
+            id="nav_menu"
+            class="lg:flex lg:flex-row flex-col justify-center items-center gap-3 absolute lg:static top-[68px] right-0 lg:bg-transparent bg-Black p-4 lg:p-0 rounded-lg lg:block text-center hidden"
+          >
+            <li class="py-1 lg:py-0">
+              <a
+                class="text-Beige hover:text-Yellow ease-linear duration-200"
+                href=""
+                >Home</a
+              >
+            </li>
+            <li class="py-1 lg:py-0">
+              <a
+                class="text-Beige hover:text-Yellow ease-linear duration-200"
+                href=""
+                >About Us</a
+              >
+            </li>
+            <li class="py-1 lg:py-0">
+              <a
+                class="text-Beige hover:text-Yellow ease-linear duration-200"
+                href=""
+                >Menu</a
+              >
+            </li>
+            <li class="py-1 lg:py-0">
+              <a
+                class="text-Beige hover:text-Yellow ease-linear duration-200"
+                href=""
+                >Rewiew</a
+              >
+            </li>
+            <li class="py-1 lg:py-0">
+              <a
+                class="text-Beige hover:text-Yellow ease-linear duration-200"
+                href=""
+                >Contact Us</a
+              >
+            </li>
+            <button
+              class="bg-green py-2 px-4 rounded text-Beige hover:bg-Yellow ease-linear duration-200"
+            >
+              Shop Online
+            </button>
+          </ul>
+          <div class="flex justify-center items-center gap-4">
+            <i
+              id="ham-bers"
+              class="fa-solid fa-bars text-Yellow text-2xl cursor-pointer hover:text-green ease-linear duration-200 border py-1 px-3 rounded border-Yellow lg:hidden"
+            ></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
