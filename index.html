@@ -23,6 +23,12 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .tabs_wraps ul li:hover,
+      .tabs_wraps ul li.active {
+        background-color: #ffc107;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -271,7 +277,367 @@
     </section>
 
     <!-- menu section -->
-    <section class="w-11/12 mx-auto"></section>
+    <section class="w-11/12 mx-auto mb-20">
+      <h3 class="text-center text-Yellow text-2xl lg:text-4xl font-lobster">
+        SnackVerse Menu
+      </h3>
+      <div class="border-2 w-36 border-Yellow mx-auto my-2"></div>
+
+      <p class="text-center text-Black mb-5">
+        Discover a delicious selection of burgers, crispy snacks, and refreshing
+        beverages at SnackVerse!
+      </p>
+      <div class="tabs_wraps">
+        <ul class="flex flex-wrap justify-center gap-3 items-center">
+          <li
+            data-tabs="all"
+            class="bg-green px-6 py-2 rounded-md text-Beige cursor-pointer active"
+          >
+            All
+          </li>
+          <li
+            data-tabs="food"
+            class="bg-green px-6 py-2 rounded-md text-Beige cursor-pointer"
+          >
+            Burger
+          </li>
+          <li
+            data-tabs="snack"
+            class="bg-green px-6 py-2 rounded-md text-Beige cursor-pointer"
+          >
+            Snack
+          </li>
+          <li
+            data-tabs="bvarage"
+            class="bg-green px-6 py-2 rounded-md text-Beige cursor-pointer"
+          >
+            Beverage
+          </li>
+          <li
+            data-tabs="pizza"
+            class="bg-green px-6 py-2 rounded-md text-Beige cursor-pointer"
+          >
+            Pizza
+          </li>
+        </ul>
+      </div>
+      <div class="mt-8">
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- bvarage-->
+          <li
+            class="item_wrap bvarage border border-Yellow p-2 rounded lg:h-80"
+          >
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/bavarage1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="item_wrap bvarage border border-Yellow p-2 rounded lg:h-80"
+          >
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/bavarage2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">Dew</h4>
+                <p>
+                  A refreshing citrus-flavored beverage to energize your day!
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $1.49</p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="item_wrap bvarage border border-Yellow p-2 rounded lg:h-80"
+          >
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/bavarage3.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="item_wrap bvarage border border-Yellow p-2 rounded lg:h-80"
+          >
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/bavarage4.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="item_wrap bvarage border border-Yellow p-2 rounded lg:h-80"
+          >
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/bavarage5.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- BurGer -->
+          <li class="item_wrap food border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/burger1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_wrap food border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="lg:h-44 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/burger2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_wrap food border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/burger3.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="item_wrap food border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/burger7.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_wrap food border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/burger6.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <!-- snacks -->
+          <li class="item_wrap snack border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/french-fries.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_wrap snack border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="lg:h-44 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/french-fries2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+          <!-- pizza -->
+          <li class="item_wrap pizza border border-Yellow p-2 rounded lg:h-80">
+            <div class="mb-2">
+              <img
+                class="lg:h-48 bg-green hover:bg-Yellow ease-linear duration-200 rounded-md w-full"
+                src="img/pizza1.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h4 class="text-green text-3xl font-bold font-lobster">
+                  Milkshakes
+                </h4>
+                <p>
+                  Creamy milkshakes available in chocolate, vanilla, and
+                  strawberry.
+                </p>
+              </div>
+              <div>
+                <p class="text-green">Price: $5.49</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
