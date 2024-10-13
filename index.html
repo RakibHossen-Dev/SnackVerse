@@ -34,6 +34,14 @@
               Black: "#212121",
               Yellow: "#FFC107",
             },
+            keyframes: {
+              move: {
+                "50%": { transform: "translate(-1rem)" },
+              },
+            },
+            animation: {
+              movingY: "move 2s linear infinite",
+            },
             fontFamily: {
               lobster: ["Lobster", "cursive"],
               pacifico: ["Pacifico", "cursive"],
@@ -54,7 +62,7 @@
         <div class="flex justify-center items-center gap-6">
           <ul
             id="nav_menu"
-            class="lg:flex lg:flex-row flex-col justify-center items-center gap-3 absolute lg:static top-[68px] right-0 lg:bg-transparent bg-Black p-4 lg:p-0 rounded-lg lg:block text-center hidden"
+            class="lg:flex lg:flex-row flex-col justify-center items-center gap-3 absolute lg:static top-[68px] right-0 lg:bg-transparent bg-Black p-4 lg:p-0 rounded-lg lg:block text-center hidden z-10"
           >
             <li class="py-1 lg:py-0">
               <a
@@ -106,6 +114,31 @@
         </div>
       </nav>
     </header>
+
+    <!-- banner section  -->
+    <section class="bg-[url('/img/b.jpg')] bg-no-repeat bg-cover py-8">
+      <div class="flex lg:flex-row flex-col lg:gap-10 items-center">
+        <div class="lg:w-1/2 w-11/12 animate-movingY">
+          <img src="img/burger1.png" alt="" />
+        </div>
+        <div class="lg:w-1/2 w-11/12">
+          <h2 class="lg:text-7xl text-4xl text-Yellow mb-3 font-lobster">
+            Experience the Finest <br />
+            at SnackVerse!
+          </h2>
+          <div class="border-2 w-36 border-Yellow"></div>
+          <p class="text-Beige mt-3">
+            Indulge in perfectly crispy french fries, refreshing beverages, and
+            an array of delectable snacks crafted to satisfy your cravings.
+          </p>
+          <button
+            class="mt-3 bg-green py-2 px-4 rounded text-Beige hover:bg-Yellow ease-linear duration-200 font-lobster"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
