@@ -104,7 +104,7 @@
             <li class="py-1 lg:py-0">
               <a
                 class="text-Beige hover:text-Yellow ease-linear duration-200"
-                href=""
+                href="#contact"
                 >Contact Us</a
               >
             </li>
@@ -151,7 +151,9 @@
 
     <!-- banner card -->
     <section class="w-11/12 mx-auto mt-20 pb-20">
-      <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-10 gap-5">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-5"
+      >
         <div class="bg-green p-4 rounded-md">
           <h3 class="text-Beige text-2xl font-pacifico">Burger</h3>
           <p class="text-Black">
@@ -169,6 +171,18 @@
           <p class="text-Yellow">
             Refreshing beverages to quench your thirst and complement every
             bite!
+          </p>
+          <button
+            class="mt-3 border-2 border-Beige py-2 px-4 rounded text-Beige hover:bg-Yellow ease-linear duration-200 font-lobster"
+          >
+            Shop Now
+          </button>
+        </div>
+        <div class="bg-green p-4 rounded-md">
+          <h3 class="text-Beige text-2xl font-pacifico">Pizza</h3>
+          <p class="text-Black">
+            Indulge in our mouthwatering selection of pizzas, from classic
+            Margherita to bold BBQ Chicken!
           </p>
           <button
             class="mt-3 border-2 border-Beige py-2 px-4 rounded text-Beige hover:bg-Yellow ease-linear duration-200 font-lobster"
@@ -624,6 +638,47 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="bg-green py-10">
+      <div
+        class="backdrop-blur-xl bg-gray-100/50 lg:w-3/5 mx-auto w-11/12 p-5 flex flex-col gap-4"
+      >
+        <h2 class="text-4xl text-green text-center font-lobster">Contact Us</h2>
+        <div class="border-2 w-36 border-green mx-auto"></div>
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-4"
+        >
+          <input
+            class="w-full p-3 outline-0"
+            type="text"
+            placeholder="Enter your name"
+          />
+          <input
+            class="w-full p-3 outline-0"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </div>
+        <input
+          class="w-full p-3 outline-0"
+          type="text"
+          placeholder="Enter your subject"
+        />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          class="p-2 outline-0"
+        ></textarea>
+        <button
+          class="bg-green text-Beige py-3 hover:bg-Yellow ease-linear duration-200"
+        >
+          Send
+        </button>
       </div>
     </section>
     <!-- Review-->
